@@ -69,17 +69,32 @@ fun main() {
 
     println("Escolha um personagem: Leonardo, Raphael, Donatello ou Michelangelo?")
     val escolhaPersonagem = readln()
-    println("Você escolheu o $escolhaPersonagem!")
+
+    if (escolhaPersonagem == nome1 || escolhaPersonagem == nome2 || escolhaPersonagem == nome3 || escolhaPersonagem == nome4) {
+      println("Você escolheu o $escolhaPersonagem!")  
+    } else {
+        println("Personagem inválido! Tente novamente")
+    }
     println()
 
     println("Escolha uma arma: Katanas, Adagas, Bo ou Tchaco?")
     val escolhaArma = readln()
-    println("Você escolheu $escolhaArma!")
+
+    if (escolhaArma == arma1 || escolhaArma == arma2 || escolhaArma == arma3 || escolhaArma == arma4) {
+        println("Você escolheu $escolhaArma!")
+    } else {
+        println("Arma inválida! Tente novamente")
+    }
     println()
 
     println("Escolha uma cor: Azul, Vermelho, Roxo ou Laranja?")
     val escolhaCor = readln()
-    println("Você escolheu a cor $escolhaCor!")
+
+    if (escolhaCor == cor1 || escolhaCor == cor2 || escolhaCor == cor3 || escolhaCor == cor4) {
+        println("Você escolheu a cor $escolhaCor!")
+    } else {
+        println("Cor inválida! Tenta novamente")
+    }
     println()
 
 
